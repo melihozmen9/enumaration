@@ -28,7 +28,16 @@ class ViewController: UIViewController {
         default:
             print("lütfen bir gün giriniz")
         }
+        //raw value okuma işlemi
+        let dunyaninsirasi = gezegenler.dunya.rawValue
+        print("dünyanin sirasi = \(dunyaninsirasi)")
     }
+    
+    
+   
+     
+    
+    
    
     
 
@@ -47,4 +56,8 @@ enum gunler {
 // kısa tanımlama
 enum gunlerkisa {
     case pazartesi,sali, carsamba,persembe,cuma,cumartesi,pazar
+}
+// enum satirdegerleri
+enum gezegenler: Int {
+    case merkur=1, venus, dunya,mars,jupiter,saturn,uranus,neptun
 }
